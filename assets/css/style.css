@@ -1,0 +1,54 @@
+.firstHeader {
+    color: red;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 50px;
+}
+
+.pageLinks {
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    padding: 5px;
+}
+
+.headerLinks {
+    text-align: right;
+}
+
+.inputBox {
+    display: block;
+    text-align: right;
+    margin: auto;
+    list-style-type: none;
+    width: 250px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: aquamarine;
+}
+
+footer {
+    background-color: aquamarine;
+}
+
+body {
+    background-color: aqua;
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figcaption {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bolder;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
