@@ -17,7 +17,7 @@
     </header>
     
     <main>
-        <section class="about-me" id="about-me">
+        <div class="about-me" id="about-me">
             <h2>About Me</h2>
             <img src="assets/images/profile-picture.jpg" alt="a picture of me">
             <p>
@@ -28,31 +28,57 @@
                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
             </p>
             <hr />
-        </section>
+        </div>
 
-        <section id="projects">
+        <div id="projects">
             <h2>Projects</h2>
 
-            <section>
-                <h3>Quiz Application</h3> <!-- Placeholder -->
-                <h4>HTML/CSS/JavaScript</h4>
-                <div class="first-project">
-                    <img class="quiz-image" src="assets/images/project-quiz.png" alt="question mark with paper in background">
-                    <div class="quiz-overlay">
-                        <p class="quiz-desc">
-                            This application is a quiz containing questions about various miscellaneous topics.
-                        </p>
+            <div class="projects-container">
+                <!-- first project -->
+                <div>
+                    <h3>Quiz Application</h3> <!-- Placeholder -->
+                    <h4>HTML/CSS/JavaScript</h4>
+                    <div class="quiz-project">
+                        <img class="quiz-image" src="assets/images/project-quiz.png" alt="question mark with paper in background">
+                        <div class="quiz-overlay">
+                            <p class="quiz-desc">
+                                This application is a quiz containing questions about various miscellaneous topics.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </section>
 
-            <section>
-                <h3>Project 2</h3> <!-- Placeholder -->
-                <p></p>
-            </section>
+                <!-- second project -->
+                <div>
+                    <h3>Login Authentication</h3> <!-- Placeholder -->
+                    <h4>JavaScript</h4>
+                    <div class="login-project">
+                        <img class="login-image" src="assets/images/login-picture.jpg" alt="a login form">
+                        <div class="login-overlay">
+                            <p class="login-desc">
+                                This application is a simple login verifier.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- third project -->
+                <div>
+                    <h3>Code Snippets</h3> <!-- Placeholder -->
+                    <h4>HTML/CSS/JavaScript</h4>
+                    <div class="snippet-project">
+                        <img class="snippet-image" src="assets/images/code-picture.jpg" alt="picture of code">
+                        <div class="snippet-overlay">
+                            <p class="snippet-desc">
+                                This application is a collection of code snippets from various languages.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <hr />
-        </section>
+        </div>
     </main>
 
     <footer class="contact-me" id="contact-me">

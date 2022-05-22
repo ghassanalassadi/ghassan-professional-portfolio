@@ -19,6 +19,10 @@
     }
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 header {
     background-color: aquamarine;
 }
@@ -92,30 +96,62 @@ h4 {
 .about-me p {
     display: block;
     font-size: 26px;
-    font-family: Arial, Helvetica, sans-serif
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 100px;
 }
 
  /* Projects */
 
- .projects {
-    display: block;
+ .projects-container {
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
-.first-project {
+.quiz-project,
+.login-project,
+.snippet-project {
+    margin: 5px;
+}
+
+.quiz-project {
     position: relative;
-    width: 450px;
+    width: 550px;
+}
+
+.login-project,
+.snippet-project {
+    position: relative;
+    width: 400px;
 }
 
 .quiz-image {
-    max-width: 450px;
-    max-height: 450px;
+    /* original size is 1280x1280 */
+    max-width: 550px;
+    max-height: auto;
     display: block;
+    margin-left: 10px;
 }
 
-.quiz-overlay {
+.login-image,
+.snippet-image {
+    /* 
+        login image og size: 1920x1256
+        snipper image og size: 800x600
+    */
+    max-width: 400px;
+    max-height: 100%;
+    margin-left: 10px;
+}
+
+.quiz-overlay,
+.login-overlay,
+.snippet-overlay {
     position: absolute;
     top: 0;
-    left: 0;
+    left: 10px;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.493);
@@ -127,14 +163,21 @@ h4 {
     justify-content: center;
     opacity: 0;
     transition: 0.5s;
-    border-radius: 44px;
 }
 
-.quiz-overlay:hover {
+.quiz-overlay {
+    border-radius: 56px;
+}
+
+.quiz-overlay:hover,
+.login-overlay:hover,
+.snippet-overlay:hover {
     opacity: 1;
 }
 
-.quiz-desc{
+.quiz-desc,
+.login-desc,
+.snippet-desc { 
     font-size: 20px;
     margin: 10px;
 }
