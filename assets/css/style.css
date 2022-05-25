@@ -4,18 +4,27 @@
 }
 
 @media screen and (max-width: 992px) {
-    body {
+    .projects-container {
         width: 50%;
-    }
-    
-    .page-links {
-        list-style-type: ;
     }
 }
 
-@media screen and (min-width: 993px) {
-    body {
+@media screen and (max-width: 768px) {
+    .projects-container {
         width: 100%;
+    }
+
+    .page-links {
+        display: flex;
+        flex-flow: column wrap;
+        align-content: center;
+    }
+
+    .about-me img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50;
     }
 }
 
@@ -118,32 +127,33 @@ h4 {
 
 .quiz-project {
     position: relative;
-    width: 550px;
+    width: auto;
 }
 
 .login-project,
 .snippet-project {
     position: relative;
-    width: 400px;
+    width: auto;
 }
 
 .quiz-image {
     /* original size is 1280x1280 */
-    max-width: 550px;
-    max-height: auto;
-    display: block;
-    margin-left: 10px;
+    max-width: 100%;
+    width: 550px;
+    height: auto;
+    margin-left: 5px;
 }
 
 .login-image,
 .snippet-image {
     /* 
         login image og size: 1920x1256
-        snipper image og size: 800x600
+        snippet image og size: 800x600
     */
     max-width: 400px;
-    max-height: 100%;
-    margin-left: 10px;
+    width: auto;
+    height: auto;
+    margin-left: 5px;
 }
 
 .quiz-overlay,
@@ -151,7 +161,7 @@ h4 {
 .snippet-overlay {
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 5px;
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.493);
