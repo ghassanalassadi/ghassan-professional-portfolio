@@ -1,4 +1,4 @@
 # Ghassan's Professional Portfolio
 
-
-https://ghassanalassadi.github.io/ghassan-professional-portfolio/
+## How to Run the Application
+You can access the website <a href="https://ghassanalassadi.github.io/ghassan-professional-portfolio/" target="_blank">here</a>.
